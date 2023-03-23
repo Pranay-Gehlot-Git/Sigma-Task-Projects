@@ -1,0 +1,13 @@
+{
+  "env": {
+    "CONFIGURATION_NAME": "loan-management-test"
+  },
+  "abc": {
+    "CONFIGURATION_NAME": "loan-management-test",
+    "CONFIGURATION_URL": "http://api.dev.lendfoundy.com:7001",
+    "EVENTHUB_URL": "http://api.dev.lendfoundy.com:7002",
+    "NATS_URL": "nats://api.dev.lendfoundy.com:4222",
+    "TENANT_URL": "http://api.dev.lendfoundy.com:7003",
+    "LOG_LEVEL": "Debug"
+  }
+}
