@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teams</title>
+    <style>
+
+     input {
+     
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 300px;
+     }
+
+     button {
+      
+    background-color: #e7e7e7; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+     }
+
+
+     .BA {
+        background-color: #008CBA;
+        color: white;
+     }
+
+     table, th, td {
+      
+        
+        border-collapse: collapse;
+        padding: 5px;
+     }
+    </style>
+    
+    <script>
+
+   function addData() {
+    //event.preventdefault();
+
+    const srN = document.getElementById('srN').value;
+    const name = document.getElementById('name').value;
+    const number = document.getElementById('number').value;
+    const email = document.getElementById('email').value;
+       const city = document.getElementById('city').value;
+     
+    if(srN=="" || srN==null) 
+    {
+        alert("Serial Number Is Required")
+       return document.getElementById('srN').focus();
+    }
+
+    if(name=="" || name==null) 
+    {
+        alert("Name Is Required")
+       return document.getElementById('name').focus();
+    }
+    
+    if(number=="" || number==null) 
+    {
+        alert("Number Is Required")
+       return document.getElementById('number').focus();
+    }
+   
+    if(email=="" || email==null) 
+    {
+        alert("Email Is Required")
+       return document.getElementById('email').focus();
+    }
+
+    if(city=="" || city==null) 
+    {
+        alert("City Is Required")
+       return document.getElementById('city').focus();
+    }
+
+    fetch('/data', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            srN,
+            name,
+            number,
+            email,
+            city
+        })  
+    })
+
+
+        .then(response => response.json())
+        .then(data => {
+             
+            const message = data.success ? 'Data Added Successfully' : 'Error adding data';
+            alert(message);
+            window.location.reload()
+        });
+    }
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+        
+
+
+    <h1><center>Add Form</center> </h1>
+
+   <center>
+        <a href="/index"><button class="BH">Home</button></a>
+        <a href="/addForm"><button class="BA">Add</button></a>
+        <a href="/updatehome"><Button class="BU">Update</Button></a>
+        <a href="/deletehome"><button class="BD">Delete</button></a>
+        <a href="/viewAll"><button class="BV">View All</button></a>
+    </center>
+       
+    <h2><center>Add Member</center></h2>
+    <center><form id="addForm" onsubmit="return false;">
+        <table>
+            <tr>
+     <td><label for="srN">Sr. No. <span style="color: red">*</span></label></td>
+    <td><input type="text" id="srN" name="srN" required placeholder="Enter Serial Number"><br></td> 
+    </tr>
+    <tr>
+     <td><label for="name">Name <span style="color: red">*</span></label></td>
+     <td><input type="text" id="name" name="name" required placeholder="Enter Your Name"></td>
+    </tr>
+    <tr>
+     <td><label for="number">Number <span style="color: red">*</span></label></td>
+     <td><input type="text" id="number" name="number" required placeholder="Enter Your Number"></td>
+    </tr>
+    <tr>
+     <td><label for="email">Email <span style="color: red">*</span></label></td>
+    <td><input type="text" id="email" name="email" required placeholder="Enter Your Email"></td>
+    </tr>
+    <tr>
+     <td><label for="city">City <span style="color: red">*</span></label></td>
+     <td><input type="text" id="city" name="city" required placeholder="Enter Your City"></td>
+    </tr>
+    </table>
+      <button type="button" onclick="addData()">Add</button>
+
+   </form></center>
+    
+
+
+
+
+</body>
+
+</html>
