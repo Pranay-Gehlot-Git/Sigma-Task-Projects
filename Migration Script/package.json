@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "logger": "^0.0.1",
+    "mongodb": "^5.0.1",
+    "mongoose": "^6.9.2"
+  }
+}

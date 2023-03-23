@@ -1,0 +1,99 @@
+
+info [Thu Feb 23 2023 16:14:15 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 16:14:15 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+info [Thu Feb 23 2023 16:14:17 GMT+0530 (India Standard Time)]  Updating Documents 0/3
+info [Thu Feb 23 2023 16:14:18 GMT+0530 (India Standard Time)]  Updating Documents 0/3
+info [Thu Feb 23 2023 16:14:18 GMT+0530 (India Standard Time)]  Updating Documents 0/3
+
+info [Thu Feb 23 2023 16:20:31 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 16:20:31 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+
+info [Thu Feb 23 2023 16:21:42 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 16:21:42 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+info [Thu Feb 23 2023 16:21:45 GMT+0530 (India Standard Time)]  Updated Documents 0/3
+info [Thu Feb 23 2023 16:21:45 GMT+0530 (India Standard Time)]  Updated Documents 0/3
+info [Thu Feb 23 2023 16:21:45 GMT+0530 (India Standard Time)]  Updated Documents 0/3
+
+info [Thu Feb 23 2023 16:22:02 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 16:22:02 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+info [Thu Feb 23 2023 16:22:04 GMT+0530 (India Standard Time)]  Updated Documents 0/3
+info [Thu Feb 23 2023 16:22:04 GMT+0530 (India Standard Time)]  Updated Documents 0/3
+info [Thu Feb 23 2023 16:22:04 GMT+0530 (India Standard Time)]  Updated Documents 0/3
+
+info [Thu Feb 23 2023 16:50:06 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 16:50:06 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+info [Thu Feb 23 2023 16:50:07 GMT+0530 (India Standard Time)]  Updating Documents for 63f5b35fa063d73718af527e + 1/3
+info [Thu Feb 23 2023 16:50:07 GMT+0530 (India Standard Time)]  Updating Documents for 63f5b378a063d73718af5281 + 2/3
+info [Thu Feb 23 2023 16:50:07 GMT+0530 (India Standard Time)]  Updating Documents for 63f5b388a063d73718af5284 + 3/3
+
+info [Thu Feb 23 2023 16:50:57 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 16:50:57 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+info [Thu Feb 23 2023 16:50:58 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b35fa063d73718af527e  1/3
+info [Thu Feb 23 2023 16:50:58 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b378a063d73718af5281  2/3
+info [Thu Feb 23 2023 16:50:58 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b388a063d73718af5284  3/3
+
+info [Thu Feb 23 2023 17:09:21 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 17:09:21 GMT+0530 (India Standard Time)]  Total Records 0
+info [Thu Feb 23 2023 17:09:21 GMT+0530 (India Standard Time)]  Total Success 0
+info [Thu Feb 23 2023 17:09:21 GMT+0530 (India Standard Time)]  Total Records Updated0
+info [Thu Feb 23 2023 17:09:21 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+
+info [Thu Feb 23 2023 17:10:27 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 17:10:27 GMT+0530 (India Standard Time)]  Total Records 0
+info [Thu Feb 23 2023 17:10:27 GMT+0530 (India Standard Time)]  Total Success 0
+info [Thu Feb 23 2023 17:10:27 GMT+0530 (India Standard Time)]  Total Records Updated0
+info [Thu Feb 23 2023 17:10:27 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+
+info [Thu Feb 23 2023 17:10:45 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 17:10:45 GMT+0530 (India Standard Time)]  Total Records 0
+info [Thu Feb 23 2023 17:10:45 GMT+0530 (India Standard Time)]  Total Success 0
+info [Thu Feb 23 2023 17:10:45 GMT+0530 (India Standard Time)]  Total Records Updated0
+info [Thu Feb 23 2023 17:10:45 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+
+info [Thu Feb 23 2023 17:11:40 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 17:11:40 GMT+0530 (India Standard Time)]  Total Records 0
+info [Thu Feb 23 2023 17:11:40 GMT+0530 (India Standard Time)]  Total Success 0
+info [Thu Feb 23 2023 17:11:40 GMT+0530 (India Standard Time)]  Total Records Updated0
+info [Thu Feb 23 2023 17:11:40 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+info [Thu Feb 23 2023 17:11:41 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b35fa063d73718af527e  1/3
+info [Thu Feb 23 2023 17:11:41 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b378a063d73718af5281  2/3
+info [Thu Feb 23 2023 17:11:41 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b388a063d73718af5284  3/3
+info [Thu Feb 23 2023 17:11:41 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+info [Thu Feb 23 2023 17:11:41 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+info [Thu Feb 23 2023 17:11:41 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+
+info [Thu Feb 23 2023 17:12:43 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 17:12:43 GMT+0530 (India Standard Time)]  Total Records 0
+info [Thu Feb 23 2023 17:12:43 GMT+0530 (India Standard Time)]  Total Success 0
+info [Thu Feb 23 2023 17:12:43 GMT+0530 (India Standard Time)]  Total Records Updated0
+info [Thu Feb 23 2023 17:12:43 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+info [Thu Feb 23 2023 17:12:45 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b35fa063d73718af527e  1/3
+info [Thu Feb 23 2023 17:12:45 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b378a063d73718af5281  2/3
+info [Thu Feb 23 2023 17:12:45 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b388a063d73718af5284  3/3
+info [Thu Feb 23 2023 17:12:45 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+info [Thu Feb 23 2023 17:12:45 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+info [Thu Feb 23 2023 17:12:45 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+
+info [Thu Feb 23 2023 17:13:20 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 17:13:21 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b35fa063d73718af527e  1/3
+info [Thu Feb 23 2023 17:13:21 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b378a063d73718af5281  2/3
+info [Thu Feb 23 2023 17:13:21 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b388a063d73718af5284  3/3
+info [Thu Feb 23 2023 17:13:21 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+info [Thu Feb 23 2023 17:13:21 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+info [Thu Feb 23 2023 17:13:21 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+info [Thu Feb 23 2023 17:13:21 GMT+0530 (India Standard Time)]  Total Records 3
+info [Thu Feb 23 2023 17:13:21 GMT+0530 (India Standard Time)]  Total Success 3
+info [Thu Feb 23 2023 17:13:21 GMT+0530 (India Standard Time)]  Total Records Updated0
+info [Thu Feb 23 2023 17:13:21 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
+
+info [Thu Feb 23 2023 17:14:03 GMT+0530 (India Standard Time)]  Database Connected
+info [Thu Feb 23 2023 17:14:04 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b35fa063d73718af527e  1/3
+info [Thu Feb 23 2023 17:14:04 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b378a063d73718af5281  2/3
+info [Thu Feb 23 2023 17:14:04 GMT+0530 (India Standard Time)]  Updating Documents for Id 63f5b388a063d73718af5284  3/3
+info [Thu Feb 23 2023 17:14:04 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+info [Thu Feb 23 2023 17:14:04 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+info [Thu Feb 23 2023 17:14:05 GMT+0530 (India Standard Time)]  Updating Documents 3/3 (No Modification)
+info [Thu Feb 23 2023 17:14:05 GMT+0530 (India Standard Time)]  Total Records 3
+info [Thu Feb 23 2023 17:14:05 GMT+0530 (India Standard Time)]  Total Success 3
+info [Thu Feb 23 2023 17:14:05 GMT+0530 (India Standard Time)]  Total Records Failed 0
+info [Thu Feb 23 2023 17:14:05 GMT+0530 (India Standard Time)]  Database Connection Closed Status: Success
