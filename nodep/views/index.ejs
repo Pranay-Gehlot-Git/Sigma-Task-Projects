@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <center>
+        <h1>Expense Tracker</h1>
+        <a href="loantenure">
+            <center>Calculate Tenure</center>
+        </a>
+    </center>
+
+    <style>
+        .htbl table {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px;
+
+        }
+
+        .htbl th {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px;
+
+        }
+
+        .htbl td {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 15px;
+
+        }
+
+
+
+
+
+        .divscroll {
+            height: 350px;
+            overflow-y: scroll;
+        }
+
+        input {
+
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 300px;
+        }
+
+        button {
+
+            background-color: red;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .addbutn {
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+    <script>
+        function restfunc() {
+
+            if (confirm("Do you really wanted to reset")) {
+                return true
+            } else {
+                return false
+            }
+
+        }
+
+        function getTotalAmount() {
+            return document.getElementById("totalAmount").value
+        }
+
+        function isValidate() {
+            let isValid = true
+            if (Number(document.getElementById('amount').value) == 0) { isValid = false }
+            if (Number(document.getElementById('amount').value) + Number(getTotalAmount()) < 0) {
+                isValid = false
+            }
+            return isValid
+        }
+
+        function allert() {
+            if (isValidate()) {
+                alert("Expense Added")
+                return true
+            } else {
+
+                alert("Invalid Value")
+                return false
+            }
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <h2>
+        <center>
+            <% if(TotalAmount<0) TotalAmount=0 %>
+
+                Total Amount: <%=TotalAmount%>
+                    <input id="totalAmount" value="<%=TotalAmount %>" hidden>
+        </center>
+    </h2>
+
+    <center>
+        <form method="POST" action="/addMoney" onsubmit="return allert()">
+            <table class="ftbl">
+                <tr>
+                    <td><label for="amount">Add Money <span style="color: red;"><b>/</b></span>
+                            Minus Expense: </label>
+                    </td>
+                    <td><input type="number" id="amount" name="amount" required placeholder="Enter Amount"></td>
+                    <td rowspan="2"> <button class="addbutn" type="submit">Add</button></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><label for="comment">Add Comment: </label></td>
+                    <td><input type="text" id="comment" name="comment" placeholder="Optional"></td>
+                </tr>
+
+            </table>
+        </form>
+        <form method="POST" action="/delete" onsubmit="return restfunc()">
+            <button type="submit">Reset</button>
+        </form>
+    </center>
+    <br>
+
+    <center>
+        <div class="divscroll">
+            <center>
+                <h2>Expense History</h2>
+            </center>
+            <table class="htbl">
+                <tr>
+                    <th>Amount Added</th>
+                    <th>Comment</th>
+                    <th>Date & Time</th>
+
+                </tr>
+                <% for(var i=0 ; i<expenses.length ; i++ ) {%>
+
+                    <tr>
+                        <td>
+                            <%= expenses[i].amount %>
+                        </td>
+
+                        <td>
+                            <%=expenses[i].comment%>
+                        </td>
+
+                        <td>
+                            <%=expenses[i].date.toLocaleString()%>
+                        </td>
+
+
+
+                    </tr>
+                    <%}%>
+            </table>
+        </div>
+    </center>
+
+</body>
+
+</html>

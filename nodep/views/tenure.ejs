@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tenure Calculator</title>
+
+    <style>
+        input {
+
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 300px;
+        }
+
+        button {
+/* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+select option:hover {
+    background-color: #1882A8;
+}
+    </style>
+    
+    <script>
+        function resetE() {
+            console.log("Reset");
+            window.location.href = window.location.href;
+
+
+        }
+
+        function allvalid()
+        {
+            if(validateLoan(document.getElementById('loanAmount')) && validateEMI(document.getElementById('emi')) && validateInterest(document.getElementById('interestRate'))) return true;
+            else return false;
+        }
+
+        function validateLoan(element) {
+            if (element.value == "") {
+                alert("LoanAmount is Invalid should be positive integer Example : 10000, 20000, 2000");
+                return false;
+            }
+            else if (element.value <= 0) {
+                alert("Enter Value More Than 0");
+                return false;
+            }
+
+            // var input = document.getElementById('loanAmount');
+            return true;
+        }
+
+        function validateEMI(element) {
+            if (element.value == "") {
+                alert("EMI is Invalid should be positive integer Example : 1000, 2000, 3000")
+                return false;
+            }
+            else if (Number(element.value) <= 0) {
+                alert("Enter Value More Than 0");
+                return false;
+            }
+            // var input = document.getElementById('loanAmount');
+return true;
+        }
+
+        function validateInterest(element) {
+            if (element.value == "") {
+                alert("Interest is Invalid should be positive integer Example : 10, 20, 20")
+                return false;
+            }
+            else if (element.value < 0) {
+                alert("Enter Value More Than 0");
+                return false;
+            }
+            // var input = document.getElementById('loanAmount');
+return true;
+        }
+
+        // function validateFrequency(element) {
+        //     possibles = ["Monthly", "Weekly", "Bi-Weekly", "Daily", "Yearly"]
+        //     console.log(element.value)
+        //     console.log(possibles.includes(element.value.trim()))
+        //     if (!possibles.includes(element.value.trim())) {
+        //      alert("EmiFrequency is Invalid should use : Monthly, Yearly, Weekly, Bi-Weekly or Daily");
+        //     }
+        //     return false
+        // }
+
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>Loan Tenure Calculator</h2>
+    </center>
+    <center><a href="/">back</a></center>
+    <center>
+        <table>
+            <form method="POST" action="/loantenure" onsubmit="return allvalid()">
+
+                <tr>
+                    <td><label for="currency">Currency<span style="color: red;"><b>*</b></span> : </label></td>
+                    <td><select name="currency" id="currency" style="width: 200px; height: 25px;">
+                    
+
+                        <option value="USD" <% if(currency=="USD") {  %>
+                            selected
+                            <% } %> >USD</option>
+
+                            <option value="INR" <% if(currency=="INR") {  %>
+                                selected
+                                <% } %> >INR</option>
+
+                    </select></td> </tr>
+                    <tr> </tr>
+                    
+                    <tr>
+                    <td><label for="loanAmount">Loan Amount <span style="color: red;"><b>*</b></span> : </label></td>
+                    <td><input type="number" step="any" min="0" id="loanAmount" name="loanAmount" 
+                            placeholder="Example: 100000" onchange="validateLoan(this)" value="<%=loanAmount%>">
+                    </td>
+
+                </tr>
+                <br>
+                <tr>
+                    <td><label for="emi">EMI<span style="color: red;"><b>*</b></span> : </label></td>
+                    <td><input type="number" step="any" min="0" id="emi" name="emi" placeholder="Example: 50000"
+                        oninvalid="validateEMI(this)" value="<%=emi%>"></td>
+
+                </tr>
+
+                <tr>
+                    <td><label for="interestRate">Interest Rate<span style="color: red;"><b>*</b></span> : </label></td>
+                    <td><input type="number" step="any" min="0" id="interestRate" name="interestRate"
+                            placeholder="Example: 10" oninvalid="validateInterest(this)" value="<%=interestRate%>"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="emiFrequency">EMI Frequency<span style="color: red;"><b>*</b></span> : </label></td>
+                    <td> <select name="emiFrequency" id="emiFrequency" style="width: 200px; height: 25px; ">
+                            <option value="Monthly" <% if(emiFrequency=="Monthly") {  %>
+                                selected
+                                <% } %> >Monthly</option>
+                            <option value="Weekly" <% if(emiFrequency=="Weekly") {  %>
+                                selected
+                                <% } %> >Weekly</option>
+                            <option value="Yearly" <% if(emiFrequency=="Yearly") {  %>
+                                selected
+                                <% } %> >Yearly</option>
+                            <option value="Bi-Weekly" <% if(emiFrequency=="Bi-Weekly") {  %>
+                                selected
+                                <% } %> >Bi-Weekly</option>
+                            <option value="Daily" <% if(emiFrequency=="Daily") {  %>
+                                selected
+                                <% } %>>Daily</option>
+                        </select>
+                    </td>
+                    <!-- <td><input type="text" id="emiFrequency" name="emiFrequency" placeholder="Example: Monthly"
+                            oninvalid="validateFrequency(this)" required></td> -->
+                </tr>
+                <tr> </tr>
+
+                <tr>
+                    <td colspan="2" >
+                        <center><button style="background-color: #008CBA;">Calculate</button>
+                            <button type="button" onclick="resetE()" style="background-color: red;">Reset</button>
+                        </center>
+                    </td>
+                </tr>
+
+
+            </form>
+        </table>
+    </center>
+    <br>
+    <br>
+    <br>
+
+    <center>
+        <% if(error=='Null' ) { %>
+            <div>
+                Loan Amount: <%=floanAmount%>
+                    <br>
+                    <br>
+                    EMI: <%=femi%>
+                        <br>
+                        <br>
+                        EMI Frequency: <%=emiFrequency%>
+                            <br>
+                            <br>
+                            InterestRate: <%=interestRate%>
+                                <br>
+                                <br>
+                                Tenure: <%if(emiFrequency=="Monthly")  { %>
+                                    <%=loanTenure%> Months
+                                            <%   }  %>
+                
+                                            <%if(emiFrequency=="Weekly")  {%>
+                                                <%=loanTenure%> Weeks
+                                                <%   }  %>
+                                                <%if(emiFrequency=="Yearly") {%>
+                                                    <%=loanTenure%> Years 
+                                                    <%   }  %>
+                                                    <%if(emiFrequency=="Bi-Weekly"){ %>
+                                                   <%=(loanTenure*2)%> Weeks
+                                                   <%  }  %>
+                                                   <%if(emiFrequency=="Daily") { %>
+                                                    <%=loanTenure%> Days
+                                                            <% }%>
+                                    <br>
+                                    <br>
+                                    Interest Payable: <%=interestPayable%>
+                                        <br>
+                                        <br>
+                                        Total Amount: <%=totalAmount%> 
+
+            </div>
+            <% } else if(error!='Null' ){ %>
+                <%=error%>
+                    <%}%>
+
+
+
+
+    </center>
+
+</body>
+
+</html>
